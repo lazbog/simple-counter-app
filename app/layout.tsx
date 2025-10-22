@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Simple Counter App',
-  description: 'A simple counter application built with Next.js and Tailwind CSS',
+  description: 'A simple counter application built with Next.js and TypeScript',
 }
 
 export default function RootLayout({
@@ -13,9 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-background font-sans antialiased">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
